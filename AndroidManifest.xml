@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="scrambledeggs.defaultpackage.workspace"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/scrambledeggslogo"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".ScrambledEggsActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+             <activity android:name=".EnterTextScreenActivity"></activity>
+             <activity android:name=".DecryptTextScreenActivity"></activity>
+             <activity android:name=".SendScreenActivity"></activity>
+             <activity android:name=".DecryptedMessageScreenActivity"></activity>
+             <activity android:name=".OptionsActivity"></activity>
+             <activity android:name=".InstructionsActivity"></activity>
+             <activity android:name=".InviteFriendsActivity"></activity>
+             <activity android:name=".AboutActivity"></activity>
+             
+             
+                 
+      <receiver android:name="MessageReceiver">
+      		<intent-filter>
+      			<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+      		</intent-filter>
+		</receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS">
+    </uses-permission>
+    
+</manifest>

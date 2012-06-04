@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for AboutActivity                         -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aboutText" 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/about_text"
+        android:textSize="17sp"
+        android:gravity="center_horizontal"
+		/>
+
+</LinearLayout>
+</ScrollView>

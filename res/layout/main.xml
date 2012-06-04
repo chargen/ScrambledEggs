@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for ScrambledEggsActivity                 -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+<!-- ================================================ -->
+<!-- Displays Scrambled Eggs logo on the start screen -->
+<!-- Then displays buttons linked to other main pages -->
+<!-- ================================================ -->    
+    
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_height="267dp"
+        android:layout_width="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/scrambledeggstitle"
+        />   
+    
+    <Button 
+        android:id="@+id/encodeButton"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_below="@id/titleImage"
+        android:text="@string/scramble_main"
+        />
+    
+    <Button 
+        android:id="@+id/decryptButton"
+		android:layout_height="wrap_content"
+		android:layout_width="250dp"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="15dp"
+		android:layout_below="@id/encodeButton"
+		android:text="@string/unscramble_main"
+		/>
+    
+    <Button 
+        android:id="@+id/inviteButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_below="@id/decryptButton"
+        android:text="@string/invite_main"
+        />
+    
+    <Button 
+        android:id="@+id/instructionsButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/inviteButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instructions_main"
+        android:textSize="13sp"
+        />
+    
+	<Button 
+        android:id="@+id/optionsButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/instructionsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:textSize="13sp"
+        android:text="@string/options_main"
+        />
+	
+</RelativeLayout>
+</ScrollView>

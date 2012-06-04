@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ======================================= -->
+    <!--     Scrambled Eggs/Activity Strings     -->
+    <!-- ======================================= --> 
+     <string name="app_name">Scrambled Eggs</string>
+
+    <!-- ======================================= -->
+    <!--                 Buttons                 -->
+    <!-- ======================================= -->
+	<string name="main_menu">Main Menu</string>
+	<string name="reply">Reply</string>
+	<string name="send">Send</string>
+	<string name="close">Close</string>
+	<string name="preview">Preview and Configure</string>
+	<string name="unscramble">Unscramble</string>
+	<string name="refresh">Refresh</string>
+	<string name="scramble_main">Scramble Message</string>
+	<string name="unscramble_main">Unscramble Message</string>
+	<string name="invite_main">Invite Your Friends</string>
+	<string name="instructions_main">Instructions</string>
+	<string name="quick_send">Quick Send</string>
+	<string name="options_main">Options</string>
+	<string name="about">About</string>
+	<string name="delete_messages">Delete Scrambled Messages</string>
+    
+    <!-- ======================================= -->
+    <!--              About Screen               -->
+    <!-- ======================================= -->       
+	<string name="about_text">Scrambled Eggs\nVersion 1.1\n\n\nScrambledEggs was created at the University of 
+	    Illinois at Urbana-Champaign by Alex Hendrix, Vince English, and Jeff Augustine. 
+	    We hope you enjoy our application!</string>
+    
+    <!-- ======================================= -->
+    <!--        Decrypted Message Screen         -->
+    <!-- ======================================= -->
+     <string name="unscrambled">*Unscrambled Text</string>
+     <string name="text_note_7">*Not the message you wanted? Make sure to check you have the right password and that you input the
+         correct message number in the previous screen. Hit back and try again!</string>
+    
+    <!-- ======================================= -->
+    <!--           Decrypt Text Screen           -->
+    <!-- ======================================= -->
+	<string name="message_number">**Message Number: </string>
+    <string name="message_number_hint">Enter Message number: e.g. 2</string>
+    <string name="password">*Password: </string>
+    <string name="password_hint">See bottom of page for notes</string>
+    <string name="scrambled_message">Scrambled Messages: </string>
+    <string name="text_note_3">*If no password was used during scrambling, leave the password field blank 
+        and press the unscramble button.</string>
+    <string name="text_note_4">*If the incorrect password is entered, the unscrambled message will 
+        show up as as another scrambled message.</string>
+    <string name="text_note_6">**If the message number field is left blank, message number 1 will attempt to 
+        unscramble according to the password.</string>
+    <string name="decrypt_error_message">No messages are available for viewing. If this is your first time using 
+        Scrambled Eggs, only messages received after installing Scrambled Eggs can be displayed. 
+        Messages sent before Scrambled Eggs was installed cannot be unscrambled. Sorry! :( \nIf 
+        you receive a new scrambled message while on this page and are seeing this message, the \"Refresh\"
+        button won\'t catch the new message, so make sure you back out of this page and come back in to view it! </string>
+
+    <!-- ======================================= -->
+    <!--             Enter Text Screen           -->
+    <!-- ======================================= -->	  
+	 <string name="message">Message: </string>
+	 <string name="message_hint">Enter text to be encrypted (limited to 132 characters)</string>
+	 <string name="text_note_2">*Password is not required for use; we can still Scramble the message with no password! 
+	     However, it\'s not quite as safe.</string>
+	 <string name="text_note_5">*Password is limited to 10 characters.</string>
+	   
+	<!-- ======================================= -->
+    <!--           Instructions Screen           -->
+    <!-- ======================================= -->
+	<string name="instructions">Congratulations!\n You have installed Scrambled Eggs and are ready to start sending and receiving encoded messages to friends (or foes).\n\nMake sure to 
+	    read the side notes (marked by a *) whenever you see them as you scramble and unscramble texts, they are hints located at the bottom of the screen and could save you some of time!
+	    \n\nSending a message:\nBegin by pressing Scramble Message. The following screen will present a message box for the desired text message input, followed by the password box. 
+	    Remember your password! Scrambled Eggs will not store it; however, by pressing Preview and Configure the message will be shown along with an option to include the password in 
+	    the message. Alternatively, the option Quick Send will skip the preview screen and immediately allow for contact selection for final sending. Do not edit the encrypted message; 
+	    doing so might break decryption abilities of Scrambled Eggs. This app uses the phone\'s default texting application; sending messages could cost money depending on your cellular plan! 
+	    \n\nReceiving a message:\nOnce installed, Scrambled Eggs will automatically listen for text messages and display a pop-up when a message is received that has been encoded by Scrambled Eggs. 
+	    The app does not directly read from the inbox, and only quickly checks if the incoming message has been encoded by Scrambled Eggs. This means that only messages received after installation 
+	    will be available for decryption. \nTo decrypt, begin by pressing Unscramble Message. The following screen contains two input fields. Below these will be all messages captured by Scrambled 
+	    Eggs along with a message number with the most recent being on top. Simply input the desired messages number into the first field, along with the corresponding password into the 
+	    second. If by chance you receive a message while in the decrypt screen a simple press of the Refresh button will add the newest message to the top. Once unscrambled feel free 
+	    to reply and continue the conversation! \n\nDeleting old messages:\nIf a message is so sensitive that even its encrypted state is dangerous the option to delete messages is 
+	    available under the Options button. Once you have over 25 messages, Scrambled Eggs will begin to clear the oldest messages similar to other texting apps. Though messages are
+	    removed in Scrambled Eggs, these messages will still be in the default texting application and regulated by its preferences. Make sure to delete these too should you really 
+	    want a message deleted.</string>
+	    
+    <!-- ======================================= -->
+    <!--           Invite Friend Screen          -->
+    <!-- ======================================= -->
+    <string name="tell_friends">Tell your friends about S.E.</string>
+
+    <string name="custom_message">Send a custom message?</string> <!-- (*) when following code implemented -->
+     <string name="invite_text_default">Ever wanted to send a text that only you and your friend can read? 
+        With Scrambled Eggs you can!</string>
+    <!-- ================================================================================================ 
+         =============  THIS CODE WILL BE IMPLEMENTED UPON RELEASE TO THE MARKET PLACE  =================
+	<string name="invite_link">&#160;Get Scrambled Eggs</string>  ====will become a link to android market
+	<string name="text_note_1">*Automatically appends a link to the download location.</string>
+	     ==================================================================================================-->
+    
+    <!-- ======================================= -->
+    <!--                Main Screen              -->
+    <!-- ======================================= -->	  
+	  
+	  
+    <!-- ======================================= -->
+    <!--              Options Screen             -->
+    <!-- ======================================= -->	  
+	<string name="delete_notification">Type the number of scrambled messages to delete in the space below, 
+      or leave the space blank to delete all old scrambled messages.\nThe oldest messages will be deleted 
+      first.\nNOTE: This will not remove messages from your actual inbox.</string>
+	<string name="check">Are you sure?</string>
+
+    <!-- ======================================= -->
+    <!--                 Send Screen             -->
+    <!-- ======================================= -->	    
+	<string name="options">Options:</string>
+	<string name="include_password">Include Password?</string>
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for EnterTextScreenActivity               -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+    
+<!-- ========================================================================== -->
+<!-- Asks user to input their text message and a password (password is optional)--> 
+<!-- ========================================================================== -->
+	<TextView
+	    android:id="@+id/textViewMessage"
+	    android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/message" 
+		/>
+
+<!-- Text message is limited to 132 characters so if the user decides to send a password they can -->
+<!-- ============================================================================================ -->
+<!-- "sbe" + 132 char message + "SBE" + 10 character password + "\n\nPW: " = 160                  -->
+
+	<EditText
+        android:id="@+id/textMessage"
+        android:layout_height="150dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textViewMessage"
+        android:gravity="top"
+        android:hint="@string/message_hint"
+        android:maxLength="132"
+		/>
+	
+	<TextView 
+	    android:id="@+id/textViewPassword"
+	    android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textMessage"
+        android:text="@string/password"
+		/>
+	
+<!-- Password is limited to 10 characters/numbers/symbols -->	
+    <EditText 
+        android:id="@+id/textPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/textViewPassword"
+        android:hint="@string/password_hint"
+        android:password="true"
+        android:maxLength="10"
+		/>
+ 
+<!-- ========================================================================== -->
+<!--   Gives the option to send the message or configure settings(send screen)  --> 
+<!-- ========================================================================== -->    
+    <Button
+        android:id="@+id/buttonQuickSend"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textPassword"
+        android:layout_margin="12dp"
+        android:text="@string/quick_send"
+        ></Button>
+
+    <Button
+        android:id="@+id/buttonScramble"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonQuickSend"
+        android:layout_margin="10dp"
+        android:text="@string/preview"
+		/>
+	
+	<Button 
+	    android:id="@+id/mainMenuButtonETS"
+	    android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="30dp"
+    	android:layout_below="@id/buttonScramble"
+    	android:text="@string/main_menu"
+    	android:textSize="15sp"
+    	/>
+
+<!-- ========================================= -->	
+<!--         useful notes for the user         -->
+<!-- ========================================= -->	
+	<TextView 
+	    android:id="@+id/note2"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/mainMenuButtonETS"
+	    android:textSize="10sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_2"
+		/>
+	
+	<TextView 
+	    android:id="@+id/note5"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/note2"
+	    android:textSize="10sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_5"
+		/>
+
+</RelativeLayout>
+</ScrollView>

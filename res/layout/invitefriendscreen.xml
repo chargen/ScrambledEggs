@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for InviteFriendsActivity                 -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent">
+
+	<TextView 
+	    android:id="@+id/inviteFriends"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="top"
+        android:text="@string/tell_friends"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+<!-- ========================================= -->	
+<!-- gives user option to send personal invite -->
+<!-- ========================================= -->
+	<TextView
+	    android:id="@+id/customMessage"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+	    android:layout_below="@id/inviteFriends"
+	    android:text="@string/custom_message"
+	    android:textSize="20sp"
+	    />
+
+	<CheckBox 
+	    android:id="@+id/messageBox"
+	    android:checked="false"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:layout_below="@id/customMessage"
+        />
+	
+	<EditText
+	    android:id="@+id/messageInput"
+	    android:layout_height="150dp"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/messageBox"
+	    android:layout_marginTop="15dp"
+	    android:gravity="top"
+		android:hint="@string/invite_text_default"
+	    /> 
+<!-- ============================================= -->
+<!-- option to send message or return to main menu --> 
+<!-- ============================================= -->  
+
+	<Button 
+	    android:id="@+id/sendButtonIF"
+	    android:layout_height="wrap_content"
+	    android:layout_width="250dp"
+	    android:layout_margin="20dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/messageInput"
+	    android:text="@string/send"
+	    />
+	    
+	<Button 
+	    android:id="@+id/mainMenuButtonIF"
+	    android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="30dp"
+    	android:layout_below="@id/sendButtonIF"
+    	android:text="@string/main_menu"
+    	android:textSize="15sp"
+    	/>
+<!-- ========================================= -->	
+<!--         useful notes for the user         -->
+<!-- ========================================= -->
+
+<!-- ======================================================================
+     ==== This code will be implemented upon posting to android market ====
+	<TextView 
+	    android:id="@+id/note1"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/mainMenuButtonIF"
+	    android:textSize="8sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_1"
+	    />	
+     ================================================================== -->
+     
+</RelativeLayout>	
+</ScrollView>

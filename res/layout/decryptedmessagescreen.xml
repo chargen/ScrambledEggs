@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for DecryptedMessageScreenActivity        -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+<!-- ================================================ -->	
+<!-- displays the senders number and unscrambled text -->
+<!-- ================================================ -->
+    <TextView android:id="@+id/contactTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textSize="20sp"
+		/>
+    
+    <TextView android:id="@+id/unscrambledMessageTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/contactTextView"
+        android:text="@string/unscrambled"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        />
+        
+    
+    <TextView android:id="@+id/unscrambledMessage"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/unscrambledMessageTextView"
+        android:textSize="20sp"
+		/>
+    
+<!-- ==================================================== -->	
+<!-- gives the option to reply or return to the main menu -->
+<!-- ==================================================== --> 
+    
+    <Button android:id="@+id/replyButton"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_below="@id/unscrambledMessage"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reply"
+		/>
+    
+    <Button android:id="@+id/mainMenuButtonDMS"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:layout_below="@id/replyButton"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/main_menu"
+	    android:textSize="15sp"
+		/>
+    
+<!-- ==================================================== -->	
+<!-- Helpful notes for the user                           -->
+<!-- ==================================================== --> 
+  
+    <TextView 
+	    android:id="@+id/note7"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/mainMenuButtonDMS"
+	    android:textSize="10sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_7"
+	    />	
+
+</RelativeLayout>
+</ScrollView>

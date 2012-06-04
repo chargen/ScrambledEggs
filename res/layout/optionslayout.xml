@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for OptionsActivity                       -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <Button 
+        android:id="@+id/aboutButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:text="@string/about"
+        />
+    
+<!-- =============================================================== --> 
+<!-- Gives the user the ability to delete 'x' amount of old messages -->
+<!-- =============================================================== -->    
+    <TextView 
+        android:id="@+id/deleteMessagesTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/aboutButton"
+        android:gravity="center_horizontal"
+        android:text="@string/delete_notification"
+        />
+    
+    <EditText 
+        android:id="@+id/deleteMessageEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/deleteMessagesTextView"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        />
+   
+    <TextView 
+        android:id="@+id/areYouSureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteMessageEditText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/check"
+        />
+    
+    <CheckBox 
+        android:id="@+id/deleteCheckBox"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/areYouSureTextView"
+        />       
+         
+    <Button 
+        android:id="@+id/deleteButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/deleteCheckBox"
+        android:text="@string/delete_messages"
+        />
+
+</RelativeLayout>
+</ScrollView>

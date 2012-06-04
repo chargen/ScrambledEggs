@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ================================================ -->
+<!--                                                  -->	
+<!-- Layout for DecryptTextScreenActivity             -->
+<!--                                                  -->
+<!-- ================================================ -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+ 	android:orientation="vertical" >
+
+<!-- ================================================================= -->
+<!-- requires user to enter the message number they want to unscramble --> 
+<!-- ================================================================= -->  
+
+    <TextView
+        android:id="@+id/messageNumberTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/message_number"
+		/>
+    
+    <EditText 
+        android:id="@+id/messageNumber"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/messageNumberTextView"
+        android:hint="@string/message_number_hint"
+        android:inputType="number"
+		/>
+
+<!-- ============================================================== -->
+<!-- requires user to enter the password used to scramble the text --> 
+<!-- ============================================================== -->     
+    
+    <TextView
+        android:id="@+id/decryptPasswordTextView"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/messageNumber"
+        android:layout_centerHorizontal="true"
+        android:text="@string/password"
+		/>
+    
+    <EditText 
+        android:id="@+id/decryptPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/decryptPasswordTextView"
+        android:hint="@string/password_hint"
+        android:password="true"
+		/>
+    
+<!-- ======================================================================= -->
+<!--        gives user option to unscramble message or refresh "inbox"       --> 
+<!-- ======================================================================= -->      	
+	<Button
+       	android:id="@+id/buttonUnScramble"
+       	android:layout_height="wrap_content"
+       	android:layout_width="200dp"
+       	android:layout_margin="10dp"
+       	android:layout_centerHorizontal="true"
+       	android:layout_below="@id/decryptPassword"
+       	android:text="@string/unscramble"
+		/>
+
+	<Button
+    	android:id="@+id/refreshButton"
+    	android:layout_height="wrap_content"
+    	android:layout_width="200dp"
+    	android:layout_margin="10dp"
+    	android:layout_centerHorizontal="true"
+    	android:layout_below="@id/buttonUnScramble"
+    	android:text="@string/refresh"
+    	/>
+	
+<!-- ======================================================================= -->
+<!-- displays the "inbox" of scrambled messages that the user can chose from --> 
+<!-- ======================================================================= -->        
+        
+	<TextView
+	    android:id="@+id/messageListTextView"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/refreshButton"
+	    android:text="@string/scrambled_message"
+	    />
+
+   	<TextView
+       	android:id="@+id/messageList"
+       	android:layout_height="wrap_content"
+       	android:layout_width="fill_parent"
+       	android:layout_marginBottom="10dp"
+       	android:layout_below="@id/messageListTextView"
+       	android:singleLine="false"
+       	android:textColor="@android:color/secondary_text_dark_nodisable"
+       	/>
+   	
+   	<Button android:id="@+id/mainMenuButtonDTS"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:layout_below="@id/messageList"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/main_menu"
+	    android:textSize="15sp"
+		/>
+
+<!-- ========================================= -->	
+<!--         useful notes for the user         -->
+<!-- ========================================= -->
+	
+	    
+	<TextView 
+	    android:id="@+id/note3"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/mainMenuButtonDTS"
+	    android:textSize="10sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_3"
+	    />	
+	    
+	<TextView 
+	    android:id="@+id/note4"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/note3"
+	    android:textSize="10sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_4"
+	    />
+	
+	<TextView 
+	    android:id="@+id/note6"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/note4"
+	    android:textSize="10sp"
+	    android:textStyle="italic"
+	    android:text="@string/text_note_6"
+	    />	
+
+</RelativeLayout>
+</ScrollView>
